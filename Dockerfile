@@ -1,10 +1,10 @@
 FROM node:10-slim
 
-LABEL name="version-action"
+LABEL name="action-version"
 LABEL maintainer="Clay Miller <clay@smockle.com>"
 LABEL version="1.0.0"
-LABEL repository="https://github/smockle/version-action"
-LABEL homepage="https://github/smockle/version-action"
+LABEL repository="https://github/smockle/action-version"
+LABEL homepage="https://github/smockle/action-version"
 
 LABEL com.github.actions.name="Versioning for GitHub Actions"
 LABEL com.github.actions.description="Increments the npm package version, then pushes Git tags"
