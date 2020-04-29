@@ -1,4 +1,4 @@
-FROM node:10-slim
+FROM node:12-slim
 
 LABEL name="action-version"
 LABEL maintainer="Clay Miller <clay@smockle.com>"
@@ -13,6 +13,7 @@ LABEL com.github.actions.color="green"
 
 RUN apt-get update && \
   apt-get install --no-install-recommends -y \
+  ca-certificates && \
   git && \
   apt-get clean -y && \
   rm -rf /var/lib/apt/lists/*
