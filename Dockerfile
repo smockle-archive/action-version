@@ -13,7 +13,7 @@ LABEL com.github.actions.color="green"
 
 RUN apt-get update && \
   apt-get install --no-install-recommends -y \
-  ca-certificates && \
+  ca-certificates \
   git && \
   apt-get clean -y && \
   rm -rf /var/lib/apt/lists/*
