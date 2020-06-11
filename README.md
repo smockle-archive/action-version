@@ -7,7 +7,7 @@ Versioning for GitHub Actions. Increments the npm package version, then pushes G
 ```YAML
 - name: Bump version
   if: contains(github.event.commits[0].message, '[skip ci]') == false
-  uses: "smockle/action-version@master"
+  uses: "smockle/action-version@main"
   env:
     GITHUB_USER_EMAIL: ${{ secrets.GITHUB_USER_EMAIL }}
     GITHUB_USER_NAME: ${{ secrets.GITHUB_USER_NAME }}
