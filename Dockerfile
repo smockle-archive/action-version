@@ -1,4 +1,4 @@
-FROM node:12-slim
+FROM node:lts-slim
 
 LABEL name="action-version"
 LABEL maintainer="Clay Miller <clay@smockle.com>"
